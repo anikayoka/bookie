@@ -1,5 +1,5 @@
 {
-  "name": "googlebooks-app",
+  "name": "bookie-app",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -14,5 +14,13 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anikayoka/bookie.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anikayoka/bookie/issues"
+  },
+  "homepage": "https://github.com/anikayoka/bookie#readme"
 }
