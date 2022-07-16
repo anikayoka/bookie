@@ -48,6 +48,7 @@ const SearchBooks = () => {
         title: book.volumeInfo.title,
         description: book.volumeInfo.description,
         image: book.volumeInfo.imageLinks?.thumbnail || '',
+        link: book.volumeInfo.previewLink,
       }));
 
       setSearchedBooks(bookData);
@@ -143,7 +144,7 @@ const SearchBooks = () => {
             );
           })}
         </CardColumns>
-        {error && <div>Sign up failed!</div>}
+        {error && <div>Cannot view books!</div>}
       </Container>
     </>
   );

@@ -10,10 +10,11 @@ import { REMOVE_BOOK } from '../utils/mutations';
 
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
-  const userData = data?.me || {};
 
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
+  const userData = data?.me || {};
+  
   // create function that accepts the book's mongo _id value as param and deletes the book from the database
   const handleDeleteBook = async (bookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
@@ -29,7 +30,7 @@ const SavedBooks = () => {
     
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
-      // document.getElementById(bookId).remove();
+      document.getElementById(bookId).remove();
     } catch (err) {
       console.error(err);
     }
@@ -70,7 +71,7 @@ const SavedBooks = () => {
             );
           })}
         </CardColumns>
-        {error && <div>Sign up failed!</div>}
+        {error && <div>Problem viewing your  books!</div>}
       </Container>
     </>
   );
