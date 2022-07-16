@@ -29,7 +29,7 @@ const SavedBooks = () => {
     
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
-      document.getElementById(bookId).remove();
+      // document.getElementById(bookId).remove();
     } catch (err) {
       console.error(err);
     }
