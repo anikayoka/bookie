@@ -36,7 +36,7 @@ const SavedBooks = () => {
   };
 
   // if data isn't here yet, say so
-  if (!userDataLength) {
+  if (loading) {
     return <h2>LOADING...</h2>;
   }
 
@@ -70,6 +70,7 @@ const SavedBooks = () => {
             );
           })}
         </CardColumns>
+        {error && <div>Sign up failed!</div>}
       </Container>
     </>
   );

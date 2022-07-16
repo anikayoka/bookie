@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/anikayoka/bookie/issues"
   },
-  "homepage": "https://github.com/anikayoka/bookie#readme"
+  "homepage": "https://github.com/anikayoka/bookie#readme",
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001367"
+  }
 }
