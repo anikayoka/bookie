@@ -9,10 +9,10 @@ const resolvers = {
         const userData = await User.findOne({ _id: context.user._id })
           .select('-__v -password')
           .populate('savedBooks');
-        console.log('look for token', userData)
+        // console.log('look for token', userData)
         return userData;
       }
-      console.log('show token', context.user)
+      // console.log('show token', context.user)
       throw new AuthenticationError('Not logged in');
     },
   },
@@ -43,7 +43,7 @@ const resolvers = {
 
       saveBook: async (parent, { bookToSave }, context) => {
         if (context.user) {
-          const updatedUser = await User.findByIdAndUpdate(
+          const updatedUser = await User.findOneAndUpdate(
             { _id: context.user._id },
             { $addToSet: { savedBooks: bookToSave } },
             { new: true }
