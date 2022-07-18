@@ -32,9 +32,7 @@
   
   ## Srcreenshots
   
-![screencapture-localhost-3000-2022-07-11-00_23_30](https://user-images.githubusercontent.com/88905488/178190204-e96c193c-e070-426f-a06b-6bf9067a616c.png)
-
-![screencapture-localhost-3000-2022-07-11-00_23_53](https://user-images.githubusercontent.com/88905488/178190246-3fb0551b-0632-4e98-961c-3bdd373fb34f.png)
+<img width="1435" alt="Screen Shot 2022-07-17 at 7 37 27 PM" src="https://user-images.githubusercontent.com/88905488/179436940-53a571c5-90a2-413d-8b27-85f3381cef80.png">
   
   
 ## License
