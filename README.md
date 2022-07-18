@@ -25,7 +25,7 @@
 
 ## Links
 
-  * [Deployed]( https://anikayoka.github.io/iam-portfolio/)
+  * [Deployed](https://git.heroku.com/desolate-shore-06042.git)
 
   * [Github](https://github.com/anikayoka/bookie)
 
